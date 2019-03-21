@@ -14,10 +14,10 @@
   "deploy":{
     "user":"imooc_manager",
     "host":["39.97.165.61"],
-    "port":,
+    "port":"39999",
     "ref":"origin/master",
     "repo":"https://github.com/Mr-luoxi/ice.git",
-    "path":"/usr/www/ice/production",
+    "path":"/root/www/ice/production",
     "ssh_options":"StrictHostKeyChecking=no",
     // "post-deploy":"npm install",
     "pre-deploy-local":"echo 'Depoly Done!'",
