@@ -23,7 +23,7 @@ module.exports = {
       "host": ["39.97.165.61"],
       "port": "22",
       "ref": "origin/master",
-      "repo": "git@github.com:Mr-luoxi/ice.git",
+      "repo": "https://github.com/Mr-luoxi/ice.git",
       "path": "/www/ice/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "post-deploy":"git pull && ./run.sh && pm2 reload ecosystem.config.js --env production",
