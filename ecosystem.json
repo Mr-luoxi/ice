@@ -1,0 +1,27 @@
+{
+  "apps":[{
+    "name":"ice",
+    "script":"server.js",
+     "instance":1,
+    "env":{
+      "COMMON_VARIABLE":"true"
+    },
+    "env_production":{
+      "NODE_ENV":"production"
+    }
+  }
+  ],
+  "deploy":{
+    "user":"imooc_manager",
+    "host":[""],
+    "ref":"origin/master",
+    "repo":"https://github.com/Mr-luoxi/ice.git",
+    "path":"/usr/www/ice/production",
+    "ssh_options":"StrictHostKeyChecking=no",
+    "post-deploy":"npm install",
+    "pre-deploy-local":"echo 'Depoly Done!'",
+    "env":{
+      "NODE_ENV":"production"
+    }
+  }
+}
