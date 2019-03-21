@@ -12,7 +12,7 @@
   }],
   "deploy": {
     "production": {
-      "user": "Mr-luoxi",
+      "user": "root",
       "host": ["39.97.165.61"],
       "port": "22",
       "ref": "origin/master",
