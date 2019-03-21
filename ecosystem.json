@@ -16,7 +16,7 @@
       "host": ["39.97.165.61"],
       "port": "22",
       "ref": "origin/master",
-      "repo": "https://github.com/Mr-luoxi/ice.git",
+      "repo": "git@github.com:Mr-luoxi/ice.git",
       "path": "/root/www/ice/production",
       "ssh_options": "StrictHostKeyChecking=no",
       // "post-deploy":"npm install",
