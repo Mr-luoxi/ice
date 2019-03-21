@@ -26,7 +26,7 @@ module.exports = {
       "repo": "git@github.com:Mr-luoxi/ice.git",
       "path": "/www/ice/production",
       "ssh_options": "StrictHostKeyChecking=no",
-      "post-deploy":"git pull",
+      "post-deploy":"git pull && ./run.sh && pm2 reload ecosystem.config.js --env production",
       "pre-deploy-local": "echo 'Depoly Done!'",
       "env": {
         "NODE_ENV": "production"
