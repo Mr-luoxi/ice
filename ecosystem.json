@@ -14,7 +14,7 @@
     "production": {
       "user": "Mr-luoxi",
       "host": ["39.97.165.61"],
-      "port": "39999",
+      "port": "22",
       "ref": "origin/master",
       "repo": "https://github.com/Mr-luoxi/ice.git",
       "path": "/root/www/ice/production",
