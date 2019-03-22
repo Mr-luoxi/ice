@@ -5,7 +5,7 @@ module.exports = {
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     args: 'one two',
-    instances: 1,
+    instances: 2,
     autorestart: true,
     watch: false,
     max_memory_restart: '1G',
@@ -26,7 +26,7 @@ module.exports = {
       "repo": "git@github.com:Mr-luoxi/ice.git",
       "path": "/root/www/ice/production",
       "ssh_options": "StrictHostKeyChecking=no",
-      // "post-deploy":"git pull && ./run.sh && pm2 reload ecosystem.config.js --env production",
+      // "post-deploy":"npm install",
       "pre-deploy-local": "echo 'Depoly Done!'",
       "env": {
         "NODE_ENV": "production"
